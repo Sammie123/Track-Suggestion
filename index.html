@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
     <title>Track Suggestion</title>
   </head>
   <body>
     <div class="container">
       <h1>Track Suggestion Questionnaire</h1>
-      <p>Fill out these questions to figure out which track best fit you</p>
+      <p>Fill out these questions to figure out which langangue best fit you</p>
       <div>
         <form id="trackForm">
           <div class="trackQuestion">
-            <label for="name">Your Name</label>
+            <label for="name"><h2>Your Name:</h2></label>
             <input id="name" class="form-control" type="text" required>
           </div>
 
           <div class="trackQuestion">
-            <label for="experience">How long have you been coding (months)</label>
+            <label for="experience"><h2>How long have you been coding (months):</h2></label>
             <input id="experience" class="form-control" type="text" required>
           </div>
 
@@ -26,7 +30,7 @@
           </select>
 
           <h2>Which of the option interest you in software development</h2>
-          <select class="form-control" id="mobile">
+          <select class="form-control" id="interest">
             <option value="A">Business software</option>
             <option value="B">Andriod/mobile software</option>
             <option value="C">Building Webpages that includes complex security software</option>
@@ -36,18 +40,18 @@
           <h2>Are you interested in game development or web development?</h2>
           <div class="radio">
             <label>
-              <input type="radio" name="yesno" value="Game Development" checked>
+              <input type="radio" name="game" value="Game Development" checked>
               Game Development
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="yesno" value="Web Development">
+              <input type="radio" name="game" value="Web Development">
               Web Development
             </label>
           </div>
 
-          <h2>Do you intend to work at Microsoft in the future</h2>
+          <h2>Do you intend to work at Microsoft in the future?</h2>
           <div class="radio">
             <label>
               <input type="radio" name="microsoft" value="Yes" checked>
@@ -60,7 +64,19 @@
               No
             </label>
           </div>
+
+          <button type="submit" class="btn">Show me my suggestion!</button>
         </form>
+      </div>
+
+      <div id="suggestion">
+        <h2>Hello <span class="name">!</span></h2>
+        <h3>Here are your top 3 suggestion:</h3>
+        <p class="Ruby">Ruby/Rails</p>
+        <p class="PHP">PHP/Drupal</p>
+        <p class="Java">Java/Andriod</p>
+        <p class="CSS">CSS/Design</p>
+        <p class="C">C#/.NET</p>
       </div>
     </div>
   </body>
