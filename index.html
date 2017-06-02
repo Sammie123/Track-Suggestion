@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Track Suggestion</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Track Suggestion Questionnaire</h1>
+      <p>Fill out these questions to figure out which track best fit you</p>
+      <div>
+        <form id="trackForm">
+          <div class="trackQuestion">
+            <label for="name">Your Name</label>
+            <input id="name" class="form-control" type="text" required>
+          </div>
+
+          <div class="trackQuestion">
+            <label for="experience">How long have you been coding (months)</label>
+            <input id="experience" class="form-control" type="text" required>
+          </div>
+
+          <h2>Do you prefer front-end or back-end developement?</h2>
+          <select class="form-control" id="frontend">
+            <option value="1">Front-End</option>
+            <option value="2">Back-End</option>
+          </select>
+
+          <h2>Which of the option interest you in software development</h2>
+          <select class="form-control" id="mobile">
+            <option value="A">Business software</option>
+            <option value="B">Andriod/mobile software</option>
+            <option value="C">Building Webpages that includes complex security software</option>
+            <option value="D">Building interactive web applications</option>
+          </select>
+
+          <h2>Are you interested in game development or web development?</h2>
+          <div class="radio">
+            <label>
+              <input type="radio" name="yesno" value="Game Development" checked>
+              Game Development
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="yesno" value="Web Development">
+              Web Development
+            </label>
+          </div>
+
+          <h2>Do you intend to work at Microsoft in the future</h2>
+          <div class="radio">
+            <label>
+              <input type="radio" name="microsoft" value="Yes" checked>
+              Yes
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="microsoft" value="No">
+              No
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
