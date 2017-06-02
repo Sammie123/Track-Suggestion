@@ -1,5 +1,7 @@
 #suggestion {
   display: none;
+  text-align: center;
+  color: #006666;
 }
 
 .jumbotron {
@@ -10,4 +12,5 @@
 body {
   font-family: trebuchet;
   background: rgba(147,206,222,1);
+  }
 }
