@@ -12,33 +12,44 @@ $(document).ready(function() {
 
     $("#suggestion").show();
 
-    if (frontBack === 'Front-End') {
+    if (frontBack === '1') {
       $("#CSS").show();
       $("#PHP").show();
       $("#Ruby").show();
+      $("#Java").hide();
+      $("#C").hide();
 
-    } else if (softwareInterest === 'A') {
-      $("#C").show();
-      $("#Java").show();
-      $("#PHP").show();
+      } else if (frontBack === '2' && softwareInterest === 'A') {
+        $("#C").show();
+        $("#Java").show();
+        $("#PHP").show();
+        $("#Ruby").hide();
+        $("#CSS").hide();
 
-    } else if (softwareInterest === 'B') {
-      $("#Java").show();
-      $("#C").show();
-      $("#PHP").show();
+      } else if (frontBack === '2' && softwareInterest === 'B') {
+        $("#Java").show();
+        $("#C").show();
+        $("#PHP").show();
+        $("#CSS").hide();
+        $("#Ruby").hide();
 
-    } else if (softwareInterest === 'C') {
-      $("#PHP").show();
-      $("#Ruby").show();
-      $("#CSS").show();
+      } else if (frontBack === '2' && softwareInterest === 'C') {
+        $("#PHP").show();
+        $("#Ruby").show();
+        $("#CSS").show();
+        $("#C").hide();
+        $("#Java").hide();
 
-    } else if (softwareInterest === 'D') {
-      $("#Ruby").show();
-      $("#PHP").show();
-      $("#CSS").show();
+      } else if (frontBack === '2' && softwareInterest === 'D') {
+        $("#Ruby").show();
+        $("#PHP").show();
+        $("#CSS").show();
+        $("#C").hide();
+        $("#Java").hide();
 
-    } else {
-      alert("Just learn all the languages!");
-    }
-  })
+      } else {
+        alert("Just learn all the languages!");
+
+      };
+    });
 });
